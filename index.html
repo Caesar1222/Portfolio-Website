@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesar</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/ee2fac3e65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ---------------header----------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick= "closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Scientist</p>
+            <h1>Hello, I'm <span>Cesar Batrez</span> <br>From Chicago, IL </h1>
+            <p>Computer Science B.S, Syracuse University 2028</p>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------about me------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Cesar.jpg"
+                width = "500"
+                height = "700" >    
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! My name is Cesar Batrez-Delatorre, a passionate and driven individual pursuing a Bachelor of Science in Computer Science and Mathematics at Syracuse University. I am deeply interested in the intersection of technology, problem-solving, and creativity, with experience in programming languages such as Python, C++, and JavaScript, as well as fields like data visualization, machine learning, and architectural design. My journey has taken me through exciting opportunities, including undergraduate research in Graph Theory, designing innovative solutions for community needs, and developing tools to streamline processes, such as attendance management systems. Outside of academics, I enjoy playing guitar, running, and exploring artistic pursuits like drawing. Whether collaborating on projects or taking the lead in leadership initiatives, I am always eager to learn, grow, and contribute to making a meaningful impact.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analysis</span><br> Visualizing, sorting and analyzing data. <br>Languages/Libraries: Python, Matplotlib, Seaborn, Pandas, NumPy.</li>
+                        <li><span>Machine Learning</span><br>Building regression models in order to predict outcomes. <br>Languages/libraries: Python, Sci-kit Learn, Tensorflow, NumPy, Pandas.</li>
+                        <li><span>Web Development</span><br> Creating interactive websites which enhance user-experience. <br>Languages: HTML, CSS, JavaScript, Google AppScripts.  </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Undergraduate Research | January 2025 - Present</span><br> Participated in workshops and seminars on Graph Theory, <br>focusing on real-world network challenges. <br>Contributed to a group project that applied Graph Theory to practical problems, <br>with results presented in a professional setting.</li>
+                        <li><span>  </span><br>   </li>
+                        <li><span>  </span><br>   </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Syracuse University | 2024-2028</span><br> Bachelor of Science in Computer Science & Mathematics</li>
+                        <li><span>Noble Street College Prep | 2020-2024</span><br>High-School Diploma</li>
+                        <!-- <li><span>App Development</span><br>Designing Web/App interfaces</li> -->
+                    </ul>
+                </div>
+
+            </div>   
+        </div>
+    </div>
+</div>
+
+<!-- ----------Services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data Analysis</h2>
+                <p>I specialize in analyzing and interpreting large datasets.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-chart-diagram"></i>
+                <h2>Algorithm Analysis</h2>
+                <p>Analysis and optimization of algorithms for performance, efficiency, and scalability.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Design</h2>
+                <p>I build websites allowing for your creative input and ensuring an enjoyable user-experience.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- --------------portfolio---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Medical Data Analysis</h3>
+                    <p>Analyzed and visualized medical data using Python by processing a dataset to evaluate health indicators such as cholesterol, glucose levels, and obesity. Data was categorized to identify trends, and tools like Pandas, Seaborn, and Matplotlib were utilized to create charts illustrating relationships between various health metrics.</p>
+                    <a href="https://github.com/Caesar1222/Data-Analysis-Certification-Projects/blob/main/Medical_Data_Visualizer.py"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/SOURCE.png">
+                <div class="layer">
+                    <h3> Syracuse University Shuttle System Model & Analysis </h3>
+                    <p> Conducted research on campus transit systems using Graph Theory and Dijkstra’s Algorithm to evaluate route efficiency across 15+ shuttle stops and over 40 unique routes; identifying potential time savings of up to 27% through optimal rerouting </p>
+                    <a href="https://github.com/Caesar1222/Syracuse-University-Transpotation-Analysis"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Noble Street Attendance Logging Website</h3>
+                    <p> Developed a web-based attendance sign-in system for Noble Street’s Student Council using HTML, CSS, JavaScript, and Google Apps Script. Integrated Google Sheets to automate attendance tracking, streamlining meeting management.</p>
+                    <a href="https://github.com/Caesar1222/Attendance_Sign-In"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Caesar1222" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- --------------contact---------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>    cesar.btrez.del@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>    +1 (773) 699-6672</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/cesar.batrezz/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/cesar-batrez-delatorre-40013b322/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Caesar1222"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100086883273264"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/Cesar_Batrez_Resume.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">  </span>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxaI4zjPji3pNnc2pMh45GXsUxJCwpdQXfGncexSAjSJUC6W1TZoc1c4irEUvsYArp3cQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully, thank you."
+            setTimeout(function(){
+                mas.innerHTML = ""
+            },50000)
+            form.reset().reset().reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+<!-- Syracuse off campus housing
+- acreman ave
+-lancaster ave 
+- marilyn ave
+- euclid Ave
+- clariton 
+- astrom
+-comstock
+-->
